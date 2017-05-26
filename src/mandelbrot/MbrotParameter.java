@@ -24,7 +24,7 @@ public class MbrotParameter {
      */
     public MbrotParameter(String fName, double resolution, double xCenter,
             double yCenter) {
-        this.fName = fName;
+        this.fName = fName + ".png";
         this.resolution = resolution;
         this.xCenter = xCenter;
         this.yCenter = yCenter;

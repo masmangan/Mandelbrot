@@ -28,7 +28,7 @@ public class ColorScheme {
         int a = (int) (255 * ((double) i) / (maxIterations / 4));
         return 
                 // Red & black with fade, a classic!
-                // ( (2*a<<16) );
+                 ( (2*a<<16) );
                 // Other options of varying qualities...
                 // Hot pink bar & black
                 // ( (255 * (i/15)) << 16 | (255 * (i/15)) );
@@ -39,7 +39,7 @@ public class ColorScheme {
                 // Blue, blue-green fade, and black
                 // (65536 + i*256 + i/2+128);
                 // Black & purple/pink fade
-                ( (0) | (2*a<<16) | (a<<8) | ((a*2)<<0) );
+                // <<--- ( (0) | (2*a<<16) | (a<<8) | ((a*2)<<0) );
     }
 
 }
